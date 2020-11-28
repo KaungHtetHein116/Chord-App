@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "940348927071",
+    "firebase_url": "https://myanchord.firebaseio.com",
+    "project_id": "myanchord",
+    "storage_bucket": "myanchord.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940348927071:android:1c452886b9b8dbd6653fea",
+        "android_client_info": {
+          "package_name": "com.reactnativefirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940348927071-1fdvhg620o4lu2s9kuldrrvie1fn5vjf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.reactnativefirebase",
+            "certificate_hash": "edb6b196c8e011776dc987345689603a4e5bd97b"
+          }
+        },
+        {
+          "client_id": "940348927071-60eneoskv1jvalh8uven3qn0ri30lulv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ5h5r_zenJ2Y6VeZFpN97V8BHCVj3Ij8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940348927071-e0hesfjsn92505jrghan2nq0qtosv0a4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
