@@ -147,3 +147,79 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Card);
+
+// import React, {useEffect, useState} from 'react';
+// import {Text, View, TouchableOpacity} from 'react-native';
+// import Icon from 'react-native-vector-icons/AntDesign';
+// import {connect} from 'react-redux';
+// import firestore from '@react-native-firebase/firestore';
+
+// const Card = ({item, Data}) => {
+//   const [like, setLike] = useState(null);
+//   const {email} = Data.user;
+//   const {songId} = item;
+
+//   useEffect(() => {
+//     isSongLiked();
+//   }, [like]);
+//   const isSongLiked = () => {
+//     firestore()
+//       .collection('likes')
+//       .doc(`${email}${songId}`)
+//       .get()
+//       .then((doc) => {
+//         if (doc.exists) {
+//           setLike(true);
+//           console.log('doc exists');
+//         }
+//         if (!doc.exists) {
+//           setLike(false);
+//           console.log('doc doesnt exist');
+//         }
+//       })
+//       .catch((err) => console.log(err));
+//   };
+
+//   const favShown = () => {
+//     if (like) {
+//       return (
+//         <TouchableOpacity onPress={() => {}}>
+//           <View>
+//             <Icon color="red" size={30} name="heart" />
+//           </View>
+//         </TouchableOpacity>
+//       );
+//     } else {
+//       return (
+//         <TouchableOpacity onPress={() => {}}>
+//           <View>
+//             <Icon color="red" size={30} name="hearto" />
+//           </View>
+//         </TouchableOpacity>
+//       );
+//     }
+//   };
+//   return (
+//     <View style={{flexDirection: 'row', justifyContent: 'center'}}>
+//       <Text>{item.songNameBurmese}</Text>
+//       {favShown()}
+//     </View>
+//   );
+// };
+
+// const mapStateToProps = (state) => {
+//   return {
+//     Data: state.auth,
+//     LikedOrUnliked: state.data,
+//   };
+// };
+
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     LikeSong: (email, songId) => dispatch(Like(email, songId)),
+//     UnlikeSong: (email, songId) => dispatch(Unlike(email, songId)),
+//     ShowFav: (email, songId) => dispatch(isSongLiked(email, songId)),
+//   };
+// };
+
+// export default connect(mapStateToProps, null)(Card);

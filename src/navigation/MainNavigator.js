@@ -8,9 +8,9 @@ import Test from '../screens/Test';
 const MainNavigator = (props) => {
   return (
     <NavigationContainer>
-      {props.authenticated ? <TabNavigator /> : <LogInStackNavigator />}
+      {/* {props.authenticated ? <TabNavigator /> : <LogInStackNavigator />} */}
       {/* <TabNavigator /> */}
-      {/* <Test /> */}
+      <Test />
     </NavigationContainer>
   );
 };
