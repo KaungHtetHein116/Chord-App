@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>940348927071-hfg83h4ujk53t5ifi1bq7hdvom8osv8s.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.940348927071-hfg83h4ujk53t5ifi1bq7hdvom8osv8s</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>940348927071-1fdvhg620o4lu2s9kuldrrvie1fn5vjf.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC6ScmUTNXtYLqSAg7Nv5I5pVtrpsyiCU8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>940348927071</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hero.chordapp</string>
+	<key>PROJECT_ID</key>
+	<string>myanchord</string>
+	<key>STORAGE_BUCKET</key>
+	<string>myanchord.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:940348927071:ios:b8480cb079921b73653fea</string>
+	<key>DATABASE_URL</key>
+	<string>https://myanchord.firebaseio.com</string>
+</dict>
+</plist>
