@@ -20,9 +20,7 @@ const AllSongs = (props) => {
         <FlatList
           keyExtractor={(item, index) => index.toString()}
           data={props.Data.dataSong}
-          renderItem={({item}) => {
-            return <Card item={item} />;
-          }}
+          renderItem={({item}) =>  <Card item={item} /> }
         />
       </View>
     </View>
