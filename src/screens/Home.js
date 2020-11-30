@@ -5,8 +5,18 @@ import {GetSongData, GetArtistData} from '../redux/actions/DataAction';
 import SegmentedControl from 'rn-segmented-control';
 import AllSongs from './components/AllSongs';
 import Artist from './components/Artist';
+import styled from 'styled-components';
 
-const Home = (props) => {
+const Container = styled.View`
+  flex: 1;
+  align-items: center;
+  margin-top: 64px;
+  margin-bottom: 7px;
+  margin-left: 16px;
+  margin-right: 16px;
+`;
+
+const Home = () => {
   const [tabIndex, setTabIndex] = useState(0);
 
   const handleTabsChange = (index) => {
@@ -14,8 +24,7 @@ const Home = (props) => {
   };
 
   return (
-    <View>
-      <View style={styles.container}>
+    <Container>
         <SegmentedControl
           tabs={['All Songs', 'Artists']}
           currentIndex={tabIndex}
@@ -27,26 +36,11 @@ const Home = (props) => {
           paddingVertical={18}
           width={360}
         />
-      </View>
-      <View>{tabIndex === 0 ? <AllSongs /> : <Artist />}</View>
-    </View>
+    
+      {tabIndex === 0 ? <AllSongs /> : <Artist />}
+    </Container>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginTop: 20,
-    alignItems: 'center',
-    marginHorizontal: 16,
-    marginBottom: 7,
-  },
-  textStyle: {
-    fontSize: 24,
-    textAlign: 'center',
-    paddingVertical: 10,
-  },
-});
 
 const mapStateToProps = (state) => {
   return {

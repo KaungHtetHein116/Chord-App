@@ -116,6 +116,7 @@ export const Unlike = (currentUser, songId) => {
 };
 
 export const isSongLiked = (currentUser, songId) => {
+
   return (dispatch) => {
     firestore()
       .collection('likes')
@@ -124,11 +125,11 @@ export const isSongLiked = (currentUser, songId) => {
       .then((doc) => {
         if (doc.exists) {
           dispatch({type: SET_LIKE});
-          console.log('doc exists');
+          console.log('isSongLiked - doc exists');
         }
         if (!doc.exists) {
           dispatch({type: SET_UNLIKE});
-          console.log('doc doesnt exist');
+          console.log('isSongLiked - doc doesnt exist');
         }
       })
       .catch((err) => console.log(err));

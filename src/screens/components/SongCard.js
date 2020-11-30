@@ -9,7 +9,7 @@ import {connect} from 'react-redux';
 const Card = ({item, Data, LikeSong, UnlikeSong, ShowFav, LikedOrUnliked}) => {
   const [visible, setIsVisible] = useState(false);
   // const [favorite, setFavorite] = useState(false);
-  const [songLiked, setSongLiked] = useState(null);
+  const [songLiked, setSongLiked] = useState(false);
 
   const {email} = Data.user;
   const {songId} = item;
@@ -37,6 +37,7 @@ const Card = ({item, Data, LikeSong, UnlikeSong, ShowFav, LikedOrUnliked}) => {
   };
 
   const favShown = () => {
+    console.log('favShown :: ', songLiked);
     if (songLiked) {
       return (
         <TouchableOpacity
@@ -69,7 +70,7 @@ const Card = ({item, Data, LikeSong, UnlikeSong, ShowFav, LikedOrUnliked}) => {
   return (
     <RNBounceable onPress={() => setIsVisible(true)}>
       <View style={styles.container}>
-        {console.log(LikedOrUnliked.songLiked)}
+        {console.log(LikedOrUnliked)}
         <View style={styles.card}>
           <View style={styles.header}>
             <Image style={styles.profileImg} source={{uri: profileImg}} />
